@@ -167,6 +167,11 @@
         page-break-after: avoid;
     }
 
+    /* Top-level headers start on new page */
+    .top-level-header {
+        page-break-before: always;
+    }
+
     /* Avoid page breaks after these elements */
     h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
