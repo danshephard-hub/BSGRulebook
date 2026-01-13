@@ -121,6 +121,15 @@
         widows: 3;
     }
 
+    /* Keep first paragraph/list/table with preceding header */
+    h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+    h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul,
+    h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol,
+    h1 + table, h2 + table, h3 + table, h4 + table, h5 + table, h6 + table,
+    h1 + blockquote, h2 + blockquote, h3 + blockquote, h4 + blockquote, h5 + blockquote, h6 + blockquote {
+        page-break-before: avoid;
+    }
+
     /* Lists */
     ul, ol {
         page-break-inside: avoid;
@@ -160,6 +169,14 @@
     img {
         max-width: 100%;
         page-break-inside: avoid;
+        page-break-before: avoid;
+    }
+
+    /* Keep images with preceding headers */
+    h1 + img, h2 + img, h3 + img, h4 + img, h5 + img, h6 + img,
+    h1 + p img:first-child, h2 + p img:first-child, h3 + p img:first-child,
+    h4 + p img:first-child, h5 + p img:first-child, h6 + p img:first-child {
+        page-break-before: avoid;
     }
 
     /* Blockquotes */
