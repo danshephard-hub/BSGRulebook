@@ -47,12 +47,26 @@
         margin-bottom: 0.3cm;
     }
 
+    h1::after {
+        content: "";
+        display: block;
+        height: 2cm;
+        margin-bottom: -2cm;
+    }
+
     h2 {
         font-size: 16pt;
         page-break-after: avoid;
         page-break-inside: avoid;
         margin-top: 0.4cm;
         margin-bottom: 0.25cm;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        height: 1.5cm;
+        margin-bottom: -1.5cm;
     }
 
     h3 {
@@ -63,6 +77,13 @@
         margin-bottom: 0.2cm;
     }
 
+    h3::after {
+        content: "";
+        display: block;
+        height: 1cm;
+        margin-bottom: -1cm;
+    }
+
     h4 {
         font-size: 12pt;
         page-break-after: avoid;
@@ -71,12 +92,26 @@
         margin-bottom: 0.15cm;
     }
 
+    h4::after {
+        content: "";
+        display: block;
+        height: 1cm;
+        margin-bottom: -1cm;
+    }
+
     h5, h6 {
         font-size: 11pt;
         page-break-after: avoid;
         page-break-inside: avoid;
         margin-top: 0.2cm;
         margin-bottom: 0.1cm;
+    }
+
+    h5::after, h6::after {
+        content: "";
+        display: block;
+        height: 0.8cm;
+        margin-bottom: -0.8cm;
     }
 
     /* Paragraph spacing */
