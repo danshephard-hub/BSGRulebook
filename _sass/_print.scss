@@ -5,10 +5,12 @@
     /* Page setup */
     @page {
         margin: 2cm;
-        size: letter;
+        size: A4;
     }
 
     /* Hide non-content elements */
+    #configform,
+    #toc,
     .site-header,
     .site-footer,
     .site-nav {
